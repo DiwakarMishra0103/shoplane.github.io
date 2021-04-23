@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+/*.thumbnail{
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 1px #585454;
+}*/
+/*-------------------------------------------------nav section start-----------------------------------------------*/
+.logodesign{
+  color: #EF236A;
+  font-size: 28px;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f1ed;
+  padding:0px 100px;
+  box-shadow: 0px 1px 10px 0px grey;
+  
+}
+.navmenu a{
+  text-decoration: none;
+  margin-right:40px;
+  color: #000000;
+  font-weight: 500;
+}
+.navmenu a:hover{
+  color:#EF236A ;
+}
+.navmenu .active{
+  color:#EF236A;
+}
+.naviconfont a{
+  color: #000000;
+  margin-right: 40px;
+}
+.naviconfont .fonthover:hover{
+color: #EF236A;
+}
+.naviconfont .fonthover{
+font-size: 24px;
+}
+.carthover{
+font-size: 24px;
+display:inline-block;
+}
+.naviconfont .carthover:hover{
+animation: shake 0.6s infinite;
+color: #EF236A;
+}
+@keyframes shake{
+0%{
+  transform: translate(0px,0px) rotate(0deg);
+}
+25%{
+  transform: translate(2px,2px) rotate(2deg);
+}
+50%{
+  transform: translate(-2px,-2px) rotate(-2deg);
+}
+75%{
+  transform: translate(3px,-2px) rotate(3deg);
+}
+100%{
+  transform: translate(-2px,2px) rotate(-2deg);
+}
+}
+.logolink{
+  text-decoration: none;
+  color:#000000;
+}
+
+
+
+/*-------------------------------------------------nav section end------------------------------------------*/
+
+
+/*-------------------------------------------------Image slide start------------------------------------------*/
+
+
+
+.slider{
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 100%;
+  height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 100%;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.manual-btn{
+  border: 2px solid #EF236A;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #EF236A;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div{
+  border: 2px solid #EF236A;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #EF236A;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #EF236A;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #EF236A;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #EF236A;
+}
+   
+/*--------------------------------------------------------Image slide end----------------------------------------------------------*/
+
+/*-------------------------------------------------clothing and accessories section start------------------------------------------*/
+
+.section-heading {
+    margin-top: 100px;
+    margin-left: 70px;
+    color: #1b1919;
+  }
+  .card-conatiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 4%;
+  }
+  .card {
+    width: 15%;
+    min-width: 200px;
+    height: auto;
+    margin: 30px 10px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow:  0 2px 10px #0000004d;
+  }
+  .card a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .card:hover {
+    box-shadow:  0 2px 10px  #EF236A;
+  }
+  .card .img img {
+    width: 100%;
+  }
+  .card .details {
+    padding-left: 10px;
+    margin: 10px auto;
+  }
+  .card .details h3 {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #000000;
+  }
+  .card .details h4 {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 12px;
+    color: #000000;
+  }
+  .card .details h5 {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #EF236A;
+  }
+  /*-------------------------------------------------clothing and accessories section end------------------------------------------*/
+
+/* Footer Style Start  */
+footer {
+  background-color: black;
+  height: 180px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+footer ul li {
+  list-style: none;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+footer ul li a,
+footer ul li {
+  text-decoration: none;
+  color: #b8b8b8;
+  font-size: 12px;
+}
+footer ul li a:hover,
+footer ul li:hover {
+  color: #EF236A;
+}
+footer ul li h3 {
+  text-decoration: none;
+  color: #EF236A;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+  }
+  footer ul {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 375px) {
+  footer ul {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+/* Footer Style End  */
+
+
+  
+/*#clothing{
+  background-color: hotpink;
+  width: 100%;
+  height: 100vh;
+}
+#aceessories{
+  background-color: rgb(185, 255, 105);
+  width: 100%;
+  height: 100vh;
+}
+#contact{
+  background-color: rgb(120, 105, 255);
+  width: 100%;
+  height: 100vh;
+}
+.nomargin{
+  margin: 0;
+}*/
